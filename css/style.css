@@ -88,3 +88,31 @@ main > div {
     line-height: 1.5;
 }
 /* End about */
+
+/* Desktop version */
+@media (min-width: 1023px) {
+    main {
+        margin: 100px auto;
+        display: flex;
+        flex-wrap: wrap;
+        width: 50%;
+    }
+    main > div {
+        padding: 30px;
+    }
+    div > h2 {
+        margin-top: 0;
+    }
+    .community {
+        width: 100%;
+    }
+    .subscript {
+        width: 50%;
+        border-bottom-left-radius: 8px;
+    }
+    .about {
+        width: 50%;
+        border-bottom-right-radius: 8px;
+        border-bottom-left-radius: 0;
+    }
+}
