@@ -1,0 +1,90 @@
+/* Start global rules & body */
+:root {
+    --cyan: hsl(179, 62%, 43%);
+    --bright-yellow: hsl(71, 73%, 54%);
+    --light-gray: hsl(204, 43%, 93%);
+    --grayish-blue: hsl(218, 22%, 67%);
+}
+* {
+    box-sizing: border-box;
+    font-family: 'Karla', sans-serif;
+}
+body {
+    font-size: 16px;
+    margin: 0;
+    background-color: var(--light-gray);
+}
+/* End global rules & body */
+/* start main */
+main {
+    display: grid;
+    grid-template-rows: repeat(3, 1fr);
+    margin: 50px auto;
+    width: 90%;
+}
+main > div {
+    padding: 25px;
+}
+/* end main */
+
+/* Start community */
+.community {
+    background-color: white; 
+    border-top-left-radius: 8px;
+    border-top-right-radius: 8px;
+}
+.community h2{
+    color: var(--cyan);
+}
+.community h3 {
+    color:var(--bright-yellow);
+}
+.community p {
+    color:var(--grayish-blue);
+    line-height: 1.7;
+}
+/* end community */
+
+/* Start subscription */
+.subscript {
+    background-color: var(--cyan);
+    color: white;
+}
+.subscript h1 {
+    display: inline-block;
+    margin: 12px 0 8px;
+}
+.subscript span {
+    color: var(--light-gray);
+    margin-left: 12px;
+}
+.subscript p {
+    margin: 0 0 52px;
+}
+.subscript button {
+    width: 100%;
+    height: 50px;
+    border: none;
+    background-color: var(--bright-yellow);
+    color: white;
+    font-weight: 700;
+    border-radius: 6px;
+    font-size: 20px;
+    box-shadow: 0 5px 15px -8px black;
+}
+/* End subscription */
+/* Start about */
+.about {
+    background-color: hsl(179, 60%, 48%);
+    border-bottom-left-radius: 8px;
+    border-bottom-right-radius: 8px;
+}
+.about h2 {
+    color: white;
+}
+.about p {
+    color: var(--light-gray);
+    padding-right: 85px;
+    line-height: 1.5;
+}
+/* End about */
